@@ -64,7 +64,7 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ chatId }) => {
       </div>
 
       <div className="p-4 bg-gray-900/50 backdrop-blur-sm border-t border-gray-700">
-        <ChatInput onSendMessage={handleSendMessage} messages={session.messages}/>
+        <ChatInput onSendMessage={handleSendMessage} />
       </div>
     </div>
   );

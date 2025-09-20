@@ -1,5 +1,5 @@
 {
   "name": "Boozbaal Chat",
-  "description": "A real-time chat application, Boozbaal Chat, allows users to connect via unique, shareable URLs. Features a multi-tabbed interface, rich text with emojis, and an AI-powered reply assistant. Conversations are persisted locally for seamless continuation.",
+  "description": "A real-time chat application, Boozbaal Chat, allows users to connect via unique, shareable URLs. Features a multi-tabbed interface, rich text with emojis, and conversations that are persisted locally for seamless continuation.",
   "requestFramePermissions": []
 }
