@@ -43,9 +43,13 @@ const ChatLayout: React.FC = () => {
     localStorage.setItem(`boozbaal-chat-session-${newChatId}`, JSON.stringify(newChatSession));
     
     setTabs([...tabs, { chatId: newChatId, participant: invitee }]);
-    setIsModalOpen(false);
     navigate(`/chat/${newChatId}`);
-    return `${window.location.origin}${window.location.pathname}#/chat/${newChatId}`;
+    
+    // Create a URL object from the current location, set the new hash, and return the full string.
+    // This is robust and works regardless of the domain or path.
+    const url = new URL(window.location.href);
+    url.hash = `#/chat/${newChatId}`;
+    return url.toString();
   };
 
   const closeTab = (e: React.MouseEvent, tabIdToClose: string) => {
